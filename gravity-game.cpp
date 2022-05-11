@@ -7,9 +7,10 @@ class GravityGame {
         int score;
         bool gameOver;
         std::string direction;
+        int sleeptime;
 
-        const int width = 30;
-        const int height = 20;
+        const int width = 50;
+        const int height = 10;
         
         int x,y, obstx, obsty;
 
@@ -24,6 +25,19 @@ class GravityGame {
 
         void Draw() {
             system("cls"); 
+
+            // i is row, j is col, 
+            for (int i=0; i<height; ++i) {
+                for (int j=0; j<width; ++j) {
+                    if (j == 0 || j == width-1 || i == 0 || i == height-1) {
+                        std::cout << "#";
+                    } else {
+                        std::cout << " ";
+                    }
+                }
+                std::cout << std::endl;
+            }
+            std::cout << std::endl;
         }
 
         void Input() {
@@ -38,8 +52,6 @@ class GravityGame {
                         break;
                 }
             }
-
-            std::cout << direction << std::endl;
         }
 
         void Logic() {
