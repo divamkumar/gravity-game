@@ -1,10 +1,14 @@
 # Gravity Game
 
 ## About
-This is a C++ console game which runs on Windows (not cross-platform, sorry) which is an abstraction of the game Gravity Guy. 
+This is a C++ console game which runs on Windows (not cross-platform, sorry). The game is a cross between Gravity Guy, Temple Run, and Geometry Dash. 
 
 ### How to Play
-Avoid the obstacles by hitting the spacebar to teleport to the top of the game window. Hit spacebar again to toggle between being on the top and the bottom. 
+- Hit spacebar toggle gravity. 
+- Avoid the obstacles.
+- The score is the number of obstacles you avoid.
+- If you hit any obstacle, the game is over.
+- As your score gets higher, the speed of the game increases.
 
 ### Requirements
 - Download the code
