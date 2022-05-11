@@ -3,6 +3,7 @@
 ## About
 This is a C++ console game which runs on Windows (not cross-platform, sorry).
 I made this game to practice my C++ skills. Enjoy!
+NOTE: The game is still incomplete. I need to still add the obstacles. So far I have the main character able to perform gravity switches.
 
 ### How to Play
 - Hit spacebar toggle gravity. 
