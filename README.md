@@ -1,7 +1,8 @@
 # Gravity Game
 
 ## About
-This is a C++ console game which runs on Windows (not cross-platform, sorry). The game is a cross between Gravity Guy, Temple Run, and Geometry Dash. 
+This is a C++ console game which runs on Windows (not cross-platform, sorry).
+I made this game to practice my C++ skills. Enjoy!
 
 ### How to Play
 - Hit spacebar toggle gravity. 
