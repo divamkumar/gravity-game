@@ -1,4 +1,6 @@
 #include <iostream>
+#include <windows.h>
+#include <conio.h>
 
 class GravityGame {
     public: 
@@ -6,9 +8,11 @@ class GravityGame {
         bool gameOver;
         std::string direction;
 
-        const int width = 40;
+        const int width = 30;
         const int height = 20;
         
+        int x,y, obstx, obsty;
+
         GravityGame() {
             score = 0;
             direction = "down";
@@ -19,11 +23,23 @@ class GravityGame {
         }
 
         void Draw() {
-            std::cout << "draw" << std::endl;
+            system("cls"); 
         }
 
         void Input() {
-            std::cout << "input" << std::endl;
+            if (_kbhit()){
+                switch(_getch()) {
+                    case ' ':
+                        if (direction == "up") {
+                            direction = "down";
+                        } else {
+                            direction = "up";
+                        }
+                        break;
+                }
+            }
+
+            std::cout << direction << std::endl;
         }
 
         void Logic() {
